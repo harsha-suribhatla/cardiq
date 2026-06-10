@@ -1,0 +1,16 @@
+{
+  "expo": {
+    "name": "CardIQ",
+    "slug": "cardiq",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.harsha.cardiq"
+    },
+    "android": {
+      "package": "com.harsha.cardiq"
+    }
+  }
+}

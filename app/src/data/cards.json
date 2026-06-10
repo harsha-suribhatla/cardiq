@@ -1,0 +1,201 @@
+{
+  "cards": [
+    {
+      "id": "card_001",
+      "name": "Venture Rewards Card",
+      "issuer": "Summit Bank",
+      "network": "Visa",
+      "type": "travel",
+      "annual_fee": 95,
+      "apr": 19.99,
+      "foreign_transaction_fee": 0,
+      "rewards_currency": "miles",
+      "points_to_dollar_rate": 0.01,
+      "sign_on_bonus": {
+        "amount": 75000,
+        "spend_requirement": 4000,
+        "days": 90
+      },
+      "earning_rates": {
+        "travel": 5,
+        "dining": 2,
+        "groceries": 1.5,
+        "gas": 1,
+        "everything_else": 1
+      },
+      "perks": [
+        "$100 TSA PreCheck credit",
+        "No foreign transaction fees",
+        "Travel accident insurance"
+      ],
+      "user_balance": {
+        "points": 42500,
+        "dollar_value": 425.00
+      },
+      "expiration": {
+        "expires": false,
+        "note": "Miles never expire as long as account is open"
+      }
+    },
+    {
+      "id": "card_002",
+      "name": "Gold Rewards Card",
+      "issuer": "Prestige Financial",
+      "network": "Amex",
+      "type": "rewards",
+      "annual_fee": 250,
+      "apr": 21.99,
+      "foreign_transaction_fee": 0,
+      "rewards_currency": "points",
+      "points_to_dollar_rate": 0.02,
+      "sign_on_bonus": {
+        "amount": 60000,
+        "spend_requirement": 6000,
+        "days": 180
+      },
+      "earning_rates": {
+        "dining": 4,
+        "groceries": 4,
+        "travel": 3,
+        "gas": 1,
+        "everything_else": 1
+      },
+      "perks": [
+        "$120 dining credit annually",
+        "$120 Uber Cash annually",
+        "No foreign transaction fees"
+      ],
+      "user_balance": {
+        "points": 18200,
+        "dollar_value": 364.00
+      },
+      "expiration": {
+        "expires": true,
+        "months_until_expiry": 4,
+        "note": "Points expire after 18 months of inactivity"
+      }
+    },
+    {
+      "id": "card_003",
+      "name": "Double Cash Card",
+      "issuer": "Crestline Bank",
+      "network": "Mastercard",
+      "type": "cashback",
+      "annual_fee": 0,
+      "apr": 18.24,
+      "foreign_transaction_fee": 3,
+      "rewards_currency": "cashback",
+      "points_to_dollar_rate": 0.01,
+      "sign_on_bonus": null,
+      "earning_rates": {
+        "dining": 2,
+        "groceries": 2,
+        "travel": 2,
+        "gas": 2,
+        "everything_else": 2
+      },
+      "perks": [
+        "No annual fee",
+        "Flat 2% on everything",
+        "No category tracking needed"
+      ],
+      "user_balance": {
+        "points": 8750,
+        "dollar_value": 87.50
+      },
+      "expiration": {
+        "expires": true,
+        "months_until_expiry": 2,
+        "note": "Cashback expires after 12 months of inactivity"
+      }
+    },
+    {
+      "id": "card_004",
+      "name": "Cashback Plus Card",
+      "issuer": "Apex Payments",
+      "network": "Visa",
+      "type": "cashback",
+      "annual_fee": 0,
+      "apr": 17.49,
+      "foreign_transaction_fee": 0,
+      "rewards_currency": "cashback",
+      "points_to_dollar_rate": 0.01,
+      "sign_on_bonus": {
+        "amount": 200,
+        "spend_requirement": 500,
+        "days": 90
+      },
+      "earning_rates": {
+        "groceries": 3,
+        "dining": 3,
+        "gas": 3,
+        "travel": 1,
+        "everything_else": 1.5
+      },
+      "perks": [
+        "No annual fee",
+        "No foreign transaction fees",
+        "Purchase protection"
+      ],
+      "user_balance": {
+        "points": 3100,
+        "dollar_value": 31.00
+      },
+      "expiration": {
+        "expires": false,
+        "note": "Cashback never expires"
+      }
+    },
+    {
+      "id": "card_005",
+      "name": "Student Rewards Card",
+      "issuer": "Collegiate Financial",
+      "network": "Visa",
+      "type": "student",
+      "annual_fee": 0,
+      "apr": 22.99,
+      "foreign_transaction_fee": 3,
+      "rewards_currency": "points",
+      "points_to_dollar_rate": 0.01,
+      "sign_on_bonus": null,
+      "earning_rates": {
+        "dining": 3,
+        "groceries": 2,
+        "streaming": 2,
+        "gas": 1,
+        "everything_else": 1
+      },
+      "perks": [
+        "No annual fee",
+        "Good grades bonus (GPA 3.0+)",
+        "Free credit score monitoring"
+      ],
+      "user_balance": {
+        "points": 5400,
+        "dollar_value": 54.00
+      },
+      "expiration": {
+        "expires": false,
+        "note": "Points never expire"
+      }
+    }
+  ],
+  "user": {
+    "id": "user_001",
+    "name": "Alex",
+    "age": 22,
+    "connected_cards": ["card_001", "card_002", "card_003", "card_004", "card_005"],
+    "total_rewards_value": 961.50,
+    "spending_profile": {
+      "top_categories": ["dining", "groceries", "travel"],
+      "monthly_spend": {
+        "dining": 400,
+        "groceries": 300,
+        "travel": 200,
+        "gas": 100,
+        "everything_else": 250
+      }
+    },
+    "redemption_goal": "flights"
+  }
+}
