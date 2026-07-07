@@ -12,6 +12,7 @@ import { Card, SpendCategory } from '../types';
 import { Colors } from '../theme/colors';
 import CardTile from '../components/CardTile';
 import SwipeRecommendation from '../components/SwipeRecommendation';
+import AgentBar from '../components/AgentBar';
 import cardsData from '../data/cards.json';
 
 type CategoryOption = {
@@ -38,7 +39,11 @@ function getBestCardForCategory(cards: Card[], category: SpendCategory): Card {
   });
 }
 
-export default function DashboardScreen() {
+interface DashboardScreenProps {
+  onOpenAgent?: () => void;
+}
+
+export default function DashboardScreen({ onOpenAgent }: DashboardScreenProps) {
   const { cards, user } = cardsData as { cards: Card[]; user: typeof cardsData.user };
   const [selectedCategory, setSelectedCategory] = useState<SpendCategory>('dining');
 
@@ -110,6 +115,9 @@ export default function DashboardScreen() {
             );
           })}
         </ScrollView>
+
+        {/* Agent Bar */}
+        <AgentBar onOpen={onOpenAgent ?? (() => {})} />
 
         {/* Swipe Recommendation */}
         <SwipeRecommendation
