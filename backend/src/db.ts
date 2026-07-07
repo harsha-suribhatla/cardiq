@@ -121,7 +121,7 @@ export async function seedData(): Promise<void> {
 
 export async function getCardsForUser(userId: string): Promise<Card[]> {
   const client = getSupabase();
-  if (!client) return staticData.cards as Card[];
+  if (!client) return staticData.cards as unknown as Card[];
 
   try {
     const { data, error } = await client
@@ -133,7 +133,7 @@ export async function getCardsForUser(userId: string): Promise<Card[]> {
       .eq('user_id', userId);
 
     if (error || !data || data.length === 0) {
-      return staticData.cards as Card[];
+      return staticData.cards as unknown as Card[];
     }
 
     return data.map((row: Record<string, unknown>) => {
@@ -168,7 +168,7 @@ export async function getCardsForUser(userId: string): Promise<Card[]> {
       } as Card;
     });
   } catch {
-    return staticData.cards as Card[];
+    return staticData.cards as unknown as Card[];
   }
 }
 
