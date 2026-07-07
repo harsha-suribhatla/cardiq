@@ -156,6 +156,6 @@ export async function findBetterCard(input: { user_id: string }): Promise<unknow
   return {
     top_recommendations: top3,
     based_on_monthly_spend: monthlySpend,
-    note: 'These cards are not in your current wallet. Apply through each issuer's website.',
+    note: "These cards are not in your current wallet. Apply through each issuer's website.",
   };
 }
