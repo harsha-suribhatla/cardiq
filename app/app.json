@@ -6,6 +6,7 @@
     "orientation": "portrait",
     "userInterfaceStyle": "dark",
     "backgroundColor": "#0A0A0F",
+    "newArchEnabled": false,
     "ios": { "supportsTablet": false },
     "android": { "adaptiveIcon": { "backgroundColor": "#0A0A0F" } },
     "web": { "bundler": "metro" }
